@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Room 2! The aquarium!</title>
+    <link rel="stylesheet" href="../CSS/Style2.css" />
+    <script
+    type="text/javascript"
+    src="https://flashphoner.com/downloads/builds/flashphoner_client/wcs_api-2.0/current/flashphoner.js"
+    ></script>
+    <script type="text/javascript" src="../JS/screen-sharing-min.js"></script>
+  </head>
+  <body onload="init_api()"> 
+    
+    <a href="../HTML/C3.html"><img class="arrow" id="arrowLeft" src="../Sprites/arrowLeft.png" alt="Arrow Left"></a>
+    <a href="../HTML/C1.html"><img class="arrow" id="arrowRight" src="../Sprites/arrowRight.png" alt="Arrow Right"></a>
+    
+    <div onclick="divAppearence()"><img src="../Sprites/Sprite-Book.png" alt="Book/NoteTaking" class="img" id="notes"></div>
+      <div onclick="divAppearence2()"><img src="../Sprites/Sprite-brain-ressources.png" alt="Brain/resources" class="img" id="resources"></div>
+
+      
+      <div id="container">
+          <div class="fp-Video">
+            <div id="screen-sharing" class="display"></div></div>   
+          <img src="../Sprites/Sprite-Class-02.svg" alt="Classroom">
+          <button id="shareBtn">Share Screen</button>
+          <a href="../HTML/chalkboard.html" id="drawBtn">Draw on the blackboard</a>
+
+      <div class="mytabs" id="mytabs">
+        <input type="radio" name="mytabs" checked="checked" />
+        <label for="tabNotes"></label>
+        <div id="tabNotes">
+          <h2>Notes</h2>
+          <textarea rows="50" cols="50"></textarea>
+        </div>
+  
+        <input type="radio" name="mytabs" />
+        <label for="tabresources"></label>
+        <div id="tabresources">
+          <h2>Resources and Info!<br><br></h2>
+          <p>1. We know more about the surface of the moon than the bottom of the ocean! <br><br></p>
+          <p>2. More humans die from cows attacks than shark attacks <br><br></p>
+          <p>3. There are more historic artefacts under the sea than in all of the world’s museums <br><br></p>
+          <h3 style="text-align:center">Resources:</h3>
+            <a href="https://classroom.google.com/u/1/h">|Google Classroom|<br><br></a>
+            <a href="https://teams.microsoft.com/">|Microsoft Teams| <br> <br></a>
+            <a href="https://studyo.app/">|Online Agenda| <br><br></a>
+            <a href="https://app.didacti.com/#!feed">|Didactic| <br><br></a>
+            <a href="https://portailsecondaire.sainteanne.ca/PluriPortail/fr/MainExterne.srf?P=LoginReq">|Pluriportail| <br></a
+            >
+          </p>
+        </div>
+    <script>
+      function divAppearence() {
+        var x = document.getElementById("tabNotes");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      function divAppearence2() {
+        var x = document.getElementById("tabresources");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+        </body>
+        </html>

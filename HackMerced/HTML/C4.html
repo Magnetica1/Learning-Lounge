@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Room 4! Heaven!</title>
+    <link rel="stylesheet" href="../CSS/Style4.css" />
+    <script 
+    type="text/javascript"
+    src="https://flashphoner.com/downloads/builds/flashphoner_client/wcs_api-2.0/current/flashphoner.js"
+    ></script>
+    <script type="text/javascript" src="../JS/screen-sharing-min.js"></script>
+  </head>
+  <body onload="init_api()"> 
+    
+    <a href="../HTML/C3.html"><img class="arrow" id="arrowRight" src="../Sprites/arrowRight.png" alt="Arrow Right"></a>
+    
+    <div onclick="divAppearence()"><img src="../Sprites/Sprite-Book.png" alt="Book/NoteTaking" class="img" id="notes"></div>
+      <div onclick="divAppearence2()"><img src="../Sprites/Sprite-brain-ressources.png" alt="Brain/resources" class="img" id="resources"></div>
+
+      
+      <div id="container">
+          <div class="fp-Video">
+            <div id="screen-sharing" class="display"></div></div>   
+          <img src="../Sprites/Sprite-Class-04.svg" alt="Classroom">
+          <button id="shareBtn">Share Screen</button>
+          <a href="../HTML/chalkboard.html" id="drawBtn">Draw on the blackboard</a>
+
+      <div class="mytabs" id="mytabs">
+        <input type="radio" name="mytabs" checked="checked" />
+        <label for="tabNotes"></label>
+        <div id="tabNotes">
+          <h2>Notes</h2>
+          <textarea id="myTextArea" rows="50" cols="50"></textarea>
+          <script>
+            var textarea = document.getElementById("myTextarea").value;
+          </script>
+        </div>
+        <input type="radio" name="mytabs" />
+        <label for="tabresources"></label>
+        <div id="tabresources">
+          <h2>Resources and Info!<br><br></h2>
+          <p>1. They might appear to float with ease, but clouds can contain millions of tons of water. <br> <br></p>
+          <p>2. While the sun obviously appears larger to us, the stars that are visible to our naked eye are actually much bigger and brighter! The dimmest star would be the Alpha Centauri, but this too, is about 1.5 times brighter than the sun. <br> <br></p>
+          <p>3. The energy produced from the Sun is so strong that every second its core releases the equivalent of 100 billion nuclear bombs. <br> <br></p>
+          <p>
+            <a href="https://classroom.google.com/u/1/h">|Google Classroom|<br><br></a>
+            <a href="https://teams.microsoft.com/">|Microsoft Teams| <br> <br></a>
+            <a href="https://studyo.app/">|Online Agenda| <br><br></a>
+            <a href="https://app.didacti.com/#!feed">|Didactic| <br><br></a>
+            <a href="https://portailsecondaire.sainteanne.ca/PluriPortail/fr/MainExterne.srf?P=LoginReq">|Pluriportail| <br></a
+            >
+          </p>
+        </div>
+    <script>
+      function divAppearence() {
+        var x = document.getElementById("tabNotes");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      function divAppearence2() {
+        var x = document.getElementById("tabresources");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+          console.log(textarea)
+    </script>
+
+        </body>
+        </html>

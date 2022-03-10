@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(15, 15, 15);
+}
+h1{
+    color: #e0dbd1;
+}
+#backSym{
+position: absolute;
+top: 6px;
+width: 2%;
+}
+#refreshSym{
+left: 50px;
+position: absolute;
+top: 1px;
+width: 3%; 
+} 
+#content {
+width: 100%;
+height:100%;
+margin: 0 auto;
+margin-top:50px;
+border: 1px dotted rgb(23, 27, 33)
+}
+#title{
+width: 800px;
+margin: 0 auto;
+text-align: center;
+margin-top:30px;
+}

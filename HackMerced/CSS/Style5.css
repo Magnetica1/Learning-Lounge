@@ -1,0 +1,109 @@
+body{
+    background-color: #DF7126;
+}
+#container {
+    position: relative;
+    display: inline-block;
+    }
+    #img1 {
+    min-width: 100vw;
+    min-height: 100vh;
+    }
+    #arrowLeft{
+        left:0px;
+    }
+    .arrow{
+        position: absolute;
+        width: 7%;
+        height: auto;
+        z-index: 5;
+        top: 50%;
+}
+h1, h2, h3, p{
+    position: absolute
+}
+h1 {
+    color: cyan;
+    top: 2%;
+text-align: center;
+right:35%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+z-index: 3;
+color: red;
+top: 10%;
+text-align: center;
+right:35%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.notesTitle {
+    position: absolute;
+    z-index: 3;
+    top: -2%;
+    color: cyan;
+    left: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.notes {
+    position: absolute;
+    z-index: 3;
+    top: 1%;
+    color: cyan;
+    left: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.resourcesTitle {
+    position: absolute;
+    z-index: 3;
+    top: 6%;
+    color: red;
+    left: 110px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.resources{
+    position: absolute;
+    z-index: 3;
+    top: 9%;
+    color: red;
+    left: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 300px;
+}
+#book{
+position: absolute;
+width: 3%;
+height: auto;
+top: 0px;
+}
+#brain{
+    position: absolute;
+    width: 3%;
+    height: auto;
+    top: 10%;
+    }
+    .Pitch{
+        position: absolute;
+        top: 70%;
+        left: 30%;
+    }
+    .pitchTitle{
+        position: absolute;
+        z-index: 3;
+        top: 74%;
+        color: cyan;
+        left: 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        font-size: 20px; 
+    }
+    .pitch{
+        position: absolute;
+        z-index: 3;
+        top: 80%;
+        color: cyan;
+        left: 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+        font-size: 17px;
+    }
